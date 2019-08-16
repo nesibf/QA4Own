@@ -1,11 +1,13 @@
-@Pending
-Feature: Test Scoring Data
+@TestRegister
+Feature: Test Register
 
-  Scenario Outline: Looking up TEST site for scoring values
-    Given the user is on TEST home page
-    When the user starts the game with '<values>'
-    Then the user win the points of '<points>'
+  @Ignore
+  Scenario Outline: Verify Registration Process
+    Given the user is on the Start home page
+    When the user registers as '<username>'
+     And the user enters the '<password>'
+    Then the user verifies the registration was successful
 
     Examples:
-      | values | points |
-      | 00000  | 0      |
+      | username      | password     |
+      | usern@me4.you | abcABC123!@# |

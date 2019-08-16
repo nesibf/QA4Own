@@ -1,11 +1,13 @@
-@Pending
-Feature: Test Scoring Data
+@TestLogin
+Feature: Test Login
 
-  Scenario Outline: Looking up TEST site for scoring values
-    Given the user is on TEST home page
-    When the user starts the game with '<values>'
-    Then the user win the points of '<points>'
+  @Ignore
+  Scenario Outline: Verify Login Process
+    Given the user is on the Start home page
+    When the user login as '<username>'
+     And the user enters the '<password>'
+    Then the user verifies the login was successful
 
     Examples:
-      | values | points |
-      | 00000  | 0      |
+      | username      | password     |
+      | usern@me4.you | abcABC123!@# |

@@ -15,6 +15,7 @@ Technologies used
 To start the tests in cmd run:
 $ mvn verify
 
-Configuration - serenity.properties
-
-IDE - IntelliJ
+Other:
+- Configuration - serenity.properties
+- IDE - IntelliJ
+- Manual Test Suite - SmokeTestSuiteManual
