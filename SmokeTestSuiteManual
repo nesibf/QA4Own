@@ -1,0 +1,211 @@
+### Test Start
+
+STEP
+Verify correct URL
+	(https://test.fast.weown.com/own/platform)
+Verify START page is visible, visibility of buttons:
+	buttonVisitOurSite
+	buttonLogin
+	buttonRegister
+	buttonFacebook
+	buttonGoogle
+EXPECTED RESULT
+	URL is correct
+	All elements are shown on page
+	Buttons are correctly aligned
+
+STEP
+Verify START page resizing:
+	using mouse resize the browser window
+EXPECTED RESULT
+	Buttons are on place.
+	Structure is not changed
+
+
+
+### Test Register
+
+STEP
+Verify correct URL
+	(https://test.fast.weown.com/own/platform)
+Verify START page is visible, visibility of buttons:
+	buttonVisitOurSite
+	buttonLogin
+	buttonRegister
+	buttonFacebook
+	buttonGoogle
+EXPECTED RESULT
+	All elements are shown on page
+	Buttons are correctly aligned
+
+STEP
+Verify REGISTER page is visible, visibility of buttons, links and inputs:
+	buttonIcon
+	linkTokenizeYourBusiness
+	inputUsername
+	inputPassword
+	buttonNextStep
+EXPECTED RESULT
+	All elements are shown on page
+	Buttons and inputs are correctly aligned
+
+STEP
+Verify REGISTER page look:
+	input fields are aligned
+	login button is bellow input fields
+EXPECTED RESULT
+	All elements are shown on page
+	Buttons and inputs are correctly aligned
+
+STEP
+Verify REGISTER page resizing:
+	buttons are on place
+	structure is not changed
+EXPECTED RESULT
+	Buttons are on place.
+	Structure is not changed
+
+STEP
+Verify REGISTER page process:
+	Username/Password page
+EXPECTED RESULT
+	buttonNextStep is not working if input fields are empty.
+	"This field is required." error is shown.
+	If "First/Last name" is missing pink popup window opens with message:
+	"Oops, that didn't work
+	The first/last name field is required"
+
+STEP
+Verify REGISTER page process:
+	Setup Your Profile is visible with:
+	inputBusinessName
+	inputCountryOfIncorporation
+	checkButtonConfirm
+	buttonPrevious
+	buttonNext
+EXPECTED RESULT
+	If "Business Name / Country" is missing pink popup window opens with message:
+	"Oops, that didn't work
+	The BusinessName/Country name field is required"
+
+STEP
+Verify REGISTER page process:
+	Enter your email address is visible with:
+	inputEmail
+	buttonPrevious
+	buttonNext
+EXPECTED RESULT
+	Verify email input control is working.
+	Input has to be in em@il.com format
+	Until input is correct buttonNextStep is deactivated.
+
+STEP
+Verify REGISTER page process:
+	Enter your password page is visible with:
+	inputPassword
+	inputConfirmPassword
+	checkButtonCaptcha
+	checkButtonAcceptTerms
+	buttonPrevious
+	buttonNext
+EXPECTED RESULT
+	Verify password input control is working.
+	Input has to be in abcABC123!@# format
+	Until input is correct buttonNextStep is deactivated.
+
+STEP
+Verify REGISTER page process:
+	Let's create your asset page is visible with:
+	inputAssetName
+	inputAssetSymbol
+	inputTotalAssetSupply
+	checkButtonUseAsset
+	buttonPrevious
+	buttonNext
+EXPECTED RESULT
+	Verify asset symbol input control is working.
+	Input has to be 3-13 uppercase letters and numbers only
+	Until input is correct buttonFinish is deactivated.
+
+STEP
+Verify REGISTER page success:
+	buttonGetStarted is visible and click able
+EXPECTED RESULT
+	Comment is written:
+	All done! 
+	You've created your business profile
+	Hit the button below to start creating investment offers.
+
+
+
+### Test Login
+
+STEP
+Verify correct URL
+	(https://test.fast.weown.com/own/platform)
+Verify START page is visible, visibility of buttons:
+	buttonVisitOurSite
+	buttonLogin
+	buttonRegister
+	buttonFacebook
+	buttonGoogle
+EXPECTED RESULT
+	All buttons are in place
+	Page suites according to the design
+
+STEP
+Verify START page resizing:
+	buttons are on place
+	structure is not changed
+EXPECTED RESULT
+	All buttons are in place
+	Page suites according to the design
+
+STEP
+Verify LOGIN page is visible, visibility of buttons, links and inputs:
+	buttonIcon
+	linkTokenizeYourBusiness
+	linkRegister
+	inputUsername
+	inputPassword
+	linkForgotPassword
+	buttonLogin
+	buttonCaptcha
+EXPECTED RESULT
+	All buttons, inputs are in place
+	Page suites according to the design
+
+STEP
+Verify LOGIN page look:
+	input fields are aligned
+	login button is bellow input fields
+EXPECTED RESULT
+	All buttons, inputs are in place
+	Page suites according to the design
+
+STEP
+Verify LOGIN page resizing:
+	buttons are on place
+	structure is not changed
+EXPECTED RESULT
+	All buttons are in place
+	Page suites according to the design
+
+STEP
+Verify LOGIN page works:
+	Verify username input control is working.
+	Input has to be in usern@ame.is format
+EXPECTED RESULT
+	All buttons, inputs are in place
+	Mail format is filtered correctly
+	Page suites according to the design
+
+STEP
+Verify Dashboard page opens:
+	Verify its URL (https://test.fast.weown.com/own/main/dashboard)
+	Verify Welcome message
+EXPECTED RESULT
+	URL is correct
+	Welcome message is correct
+	Page suites according to the design
+
