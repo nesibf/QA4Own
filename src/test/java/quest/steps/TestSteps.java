@@ -17,17 +17,17 @@ public class TestSteps {
         testPageSteps.verifyStartPageOpens();
     }
 
-    @When("the user registers as '.*'")
+    @When("the user registers as '(.*)'")
     public void whenTheUserRegistersAsUser(final String username) {
         // TBD
     }
 
-    @When("the user login as '.*'")
+    @When("the user login as '(.*)'")
     public void whenTheUserLoginAs(final String username) {
         // TBD
     }
 
-    @And("the user enters the '.*'")
+    @And("the user enters the '(.*)'")
     public void andTheUserEntersThePassword(final String password) {
         // TBD
     }
