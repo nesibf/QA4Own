@@ -13,7 +13,8 @@ public class TestSteps {
 
     @When("the user is on the Start home page")
     public void whenTheUserIsOnTheStartHomePage() {
-        testPageSteps.openStartPage();
+        testPageSteps.isOnHomePage();
+        testPageSteps.verifyStartPageOpens();
     }
 
     @When("the user registers as '.*'")
@@ -33,7 +34,7 @@ public class TestSteps {
 
     @Then("the user verifies the Start page opens correctly")
     public void thenTheUserVerifiesTheStartPageOpensCorrectly() {
-        testPageSteps.openStartPage();
+        testPageSteps.verifyStartPageOpens();
     }
 
     @Then("the user verifies the registration was successful")
